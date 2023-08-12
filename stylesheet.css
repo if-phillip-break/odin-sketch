@@ -1,12 +1,13 @@
 #container {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 1280px;
-    width: 1280px;
+    flex-wrap: wrap;
+    height: 160;
+    width: 160;
+    border-width: thick;
+    border-color: black;
 }
 
 .square {
-    height: 5px;
-    width: 5px;
+    height: 10px;
+    width: 10px;
 }
