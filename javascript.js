@@ -11,13 +11,12 @@ button.addEventListener("click", () => {
 function changeSize(size){
     clearGrid();
 
-    let width = 960 / size;
-
     for (let i = 0; i < size; i++){
         for (let j = 0; j < size; j++){
             const square = document.createElement("div");
             square.classList.add("square");
-            square.style.width = width;
+            square.style.height = `${900 / size}px`
+            square.style.width = `${900 / size}px`
             container.appendChild(square);
         }
     }
