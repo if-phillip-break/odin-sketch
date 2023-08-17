@@ -10,13 +10,13 @@ button.addEventListener("click", () => {
 
 function changeSize(size){
     clearGrid();
-
+    const maxDim = Math.floor(900 / size);
     for (let i = 0; i < size; i++){
         for (let j = 0; j < size; j++){
             const square = document.createElement("div");
             square.classList.add("square");
-            square.style.height = `${900 / size}px`
-            square.style.width = `${900 / size}px`
+            square.style.height = maxDim + "px";
+            square.style.width = maxDim + "px";
             container.appendChild(square);
         }
     }

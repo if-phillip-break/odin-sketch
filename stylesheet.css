@@ -8,7 +8,7 @@
 }
 
 .square {
-    border-color: black;
-    border-style: solid;
-    flex: 1;
+    outline: 1px solid black;
+    display: inline-block;
+    border: none;
 }
